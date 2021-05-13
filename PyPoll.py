@@ -20,6 +20,17 @@ total_votes = 0
 # Candidate Options
 candidate_options = []
 
+# Total vote counter
+total_votes = 0
+
+# Declare empty dictionary
+candidate_votes = {}
+
+# Winning Candidate and Winning Count Tracker
+winning_candidate = ""
+winning_count = 0
+winning_percentage = 0
+
 # Open the election results and read the file
 with open(file_to_load) as election_data:
 
@@ -41,8 +52,27 @@ with open(file_to_load) as election_data:
         # If the candidate does not match any existing candidate...
         if candidate_name not in candidate_options:
 
-            #Add the candidate to the candidate list
+            # Add the candidate to the candidate list
             candidate_options.append(candidate_name)
+
+            # Track the candidates vote count
+            candidate_votes[candidate_name] = 0
+
+        # Add a vote to that candidate's count
+        candidate_votes[candidate_name] += 1
         
-# Print the candidate list
-print(candidate_options)
+    # Calculate percentage of votes per candidate
+    for candidate_name in candidate_votes:
+        votes = candidate_votes[candidate_name]
+        vote_percentage = float(votes) / float(total_votes)* 100
+        # print(f"{candidate_name}: received {vote_percentage:.1f}% of the vote.")
+
+        # Print out each candidate's name, vote count, and percentage of
+        # votes to the terminal
+        if(votes > winning_count) and (vote_percentage > winning_percentage):
+            winning_count = votes
+            winning_percentage = vote_percentage
+            winning_candidate = candidate_name
+
+# Print the candidate vote dictionary
+# print(candidate_votes)
