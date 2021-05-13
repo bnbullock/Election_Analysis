@@ -17,12 +17,12 @@ Complete an election audit for a recent election and provide the results as foll
 The resultant analysis of the election is as follows:
 - 369,711 total votes were cast in the election
 - The candidates were:
-- - Charles Casper Stockham:  (85,213)
-- - Diana DeGette: 73.8% (272,892)
-- - Raymon Anthony Doane: 3.1% (11,606)
+  - Charles Casper Stockham:  (85,213)
+  - Diana DeGette: 73.8% (272,892)
+  - Raymon Anthony Doane: 3.1% (11,606)
 - The candidate results were:
-- - Charles Casper Stockham received 23.0% of the votes and 85,213 total votes
-- - Diana DeGette received 73.8% of the votes and 272,892 total votes
-- - Raymon Anthony Doane received 3.1% of the votes and 11,606 total votes
+  - Charles Casper Stockham received 23.0% of the votes and 85,213 total votes
+  - Diana DeGette received 73.8% of the votes and 272,892 total votes
+  - Raymon Anthony Doane received 3.1% of the votes and 11,606 total votes
 - The winner of the election was:
   - Diana DeGette
