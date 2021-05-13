@@ -10,8 +10,8 @@ Complete an election audit for a recent election and provide the results as foll
 5. Determine election winner
 
 ## Resources
-- Data Source : election_results.csv
-- Software : Python 3.8.5, Visual Studio Code 1.56.2
+- Data Source: election_results.csv
+- Software: Python 3.8.5, Visual Studio Code 1.56.2
 
 ## Summary
 The resultant analysis of the election is as follows:
